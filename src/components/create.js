@@ -16,6 +16,7 @@ function Create() {
             " Cover: " + cover +
             " Author:" + author);
 
+             // Make a POST request to the server to add the book
             axios.post('http://localhost:4000/api/books', book)
             .then()
             .catch();
