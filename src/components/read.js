@@ -10,10 +10,10 @@ function Read() {
     // Use the 'useEffect' hook to perform an HTTP GET request
     useEffect(
         () => {
-            axios.get('https://jsonblob.com/api/jsonblob/1161593332966481920')
+            axios.get('http://localhost:4000/api/books')
                 .then(
                     (response) => {
-                        setData(response.data.books); // Set the 'data' variable with the books data from the response
+                        setData(response.data.myBooks); // Set the 'data' variable with the books data from the response
                     }
                 )
                 .catch(
